@@ -5,7 +5,7 @@ The builds are triggered using github webhook.
 
 ## **Setting up project environment** 
 
-** Initializing EC2 Instance **
+**Initializing EC2 Instance**
 
 Since minimum hardware requirement for sonarqube is quite big, a t2.medium instance is selected instead of t2.micro
 

@@ -83,7 +83,9 @@ cd sonarqube-9.4.0.54424/bin/linux-x86-64/
 **Logging into jenkins**
 
 Log into Jenkins using the link
+```
 > http://<ec2-public-ip>:8080
+```
 
 As per the instruction use the below command to get the admininstrator password
 
@@ -97,7 +99,9 @@ After login, go to Manage Jenkins > Manage Plugins > Available plugins and insta
 
 Restart Jenkins after installation of plugin by going to the following link
 
-> http://<ec2-public-ip>:8080/restart
+```
+http://<ec2-public-ip>:8080/restart
+```
 
 Go to Jenkins Dashboard and create new item. 
 
@@ -113,7 +117,9 @@ For the webhook, go to the settings for the repository "Jenkins-Sonarqube-Docker
 
 The payload url should point to the Jenkins server
 
-> http://<ec2-public-ip>:8080/github-webhook/
+```
+http://<ec2-public-ip>:8080/github-webhook/
+```
 
 Content type is Application/json
 
@@ -124,8 +130,9 @@ Any change in code in git scm will now trigger the build job in Jenkins.
 **Logging in sonarqube**
 
 log into sonarqube using the following link 
-
-> http://<ec2-public-ip>:9000
+```
+http://<ec2-public-ip>:9000
+```
 
 The default username is admin. Password is admin. 
 
